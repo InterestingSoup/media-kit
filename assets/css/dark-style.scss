@@ -1,0 +1,392 @@
+$main-color: #ee0979;
+$optional-color: #cacaca;
+$white-color: #ffffff;
+$black-color: #000000;
+
+// Theme Dark CSS
+.theme-dark {
+
+    body {
+        background-color: #000000;
+        color: $white-color;
+    }
+    a {
+        color: $white-color;
+    
+        &:hover {
+            color: $main-color;
+        }
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        color: $white-color;
+    }
+    p {
+        color: $optional-color;
+    }
+    .bg-f9f9f9 {
+        background-color: #111111;
+    }
+
+    .default-btn {
+        color: $white-color;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: $white-color;
+        
+        &::placeholder {
+            color: $optional-color;
+        }
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    .navbar {
+        &.is-sticky {
+            background: rgba(18, 18, 18, 0.7) !important;
+            backdrop-filter: blur(20px);
+        }
+    }
+    .bg-light {
+        background-color: $black-color !important;
+    }
+    .navbar-light {
+        .navbar-brand {
+            img {
+                filter: invert(1);
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $white-color;
+                    
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    // Mobile and iPad Navbar
+    @media only screen and (max-width: 991px) {
+    
+        .navbar {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .navbar-light {
+            .navbar-toggler {
+                color: $white-color;
+    
+                .burger-menu {
+                    span {
+                        background: $white-color;
+                    }
+                }
+            }
+            .navbar-nav {
+                background-color: #111111;
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    
+    }
+
+    .main-banner-content {
+        form {
+            .input-newsletter {
+                color: $white-color;
+                background-color: #111111;
+                
+                &::placeholder {
+                    color: #cacaca;
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .followers-area {
+        &::before {
+            background-color: #000000;
+        }
+    }
+    .single-followers-box {
+        background-color: #222222;
+    
+        .sub-title {
+            color: $optional-color;
+        }
+        .link {
+            color: $optional-color;
+        }
+        .line {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        &:hover {
+            .sub-title {
+                color: $white-color;
+            }
+            .link {
+                color: $white-color;
+            }
+            .line {
+                background-color: $white-color;
+            }
+        }
+    }
+    .shape1 {
+        opacity: .10;
+    }
+
+    .single-social-statistics-box {
+        background-color: #111111;
+    
+        .sub-title {
+            color: $optional-color;
+        }
+        .link {
+            color: $optional-color;
+            
+            &:hover {
+                color: $main-color;
+            }
+        }
+        .line {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .audience-content {
+        .audience-content-inner {
+            h5 {
+                border-color: $optional-color;
+                color: $optional-color;
+            }
+        }
+        .instagram-audience-content {
+            .audience-item {
+                .audience-header {
+                    color: $white-color;
+                }
+                .audience-bar {
+                    .bar-inner {
+                        .bar {
+                            background: rgba(255, 255, 255, 0.1);
+                        }
+                    }
+                }
+            }
+        }
+        .single-collaborations-box {
+            p {
+                color: $optional-color;
+            }
+        }
+    }
+
+    .single-partners-box {
+        a {
+            background-color: #222222;
+        }
+        img {
+            filter: invert(1);
+        }
+    }
+
+    .video-area {
+        background: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
+    }
+
+    .single-blog-post {
+        background-color: #222222;
+    
+        .post-content {
+            .post-meta {
+                li {
+                    color: $optional-color;
+    
+                    &::before {
+                        background-color: #cacaca;
+                    }
+                    a {
+                        color: $optional-color;
+    
+                        &::before {
+                            color: $white-color;
+                        }
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe-content {
+        p {
+            color: $white-color;
+        }
+    }
+    .subscribe-form {
+        background-color: $black-color;
+    }
+
+    .contactModal {
+        .modal-dialog {
+            .modal-content {
+                background-color: #000000;
+    
+                button.close {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-color: rgba(255, 255, 255, 0.1);
+                    color: $white-color;
+    
+                    &:hover {
+                        background-color: red;
+                        border-color: red;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-details-header {
+        .entry-meta {
+            ul {
+                li {
+                    border-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+    .blog-details-desc {
+        .article-content {
+            .features-list {
+                li {
+                    color: $optional-color;
+                    
+                    strong {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        .article-footer {
+            border-top-color: rgba(255, 255, 255, 0.1);
+            
+            .article-tags {
+                color: $optional-color;
+                
+                span {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    blockquote, .blockquote {
+        background-color: rgba(255, 255, 255, 0.1);
+        
+        p {
+            color: $white-color;
+        }
+        &::before {
+            opacity: .08 !important;
+            animation: unset !important;
+        }
+    }
+    .kreton-post-navigation {
+        border: {
+            top-color: rgba(255, 255, 255, 0.1);
+            bottom-color: rgba(255, 255, 255, 0.1);
+        };
+    }
+    .prev-link-wrapper {
+        .prev-link-info-wrapper {
+            color: $white-color;
+        }
+        .meta-wrapper {
+            color: $optional-color;
+        }
+    }
+    .next-link-wrapper {
+        .next-link-info-wrapper {
+            color: $white-color;
+        }
+        .meta-wrapper {
+            color: $optional-color;
+        }
+    }
+    .comments-area {
+        .comment-body {
+            border-color: rgba(255, 255, 255, 0.1);
+            color: $white-color;
+    
+            .reply {
+                a {
+                    border-color: rgba(255, 255, 255, 0.1);
+                    color: $white-color;
+
+                    &:hover {
+                        border-color: $main-color;
+                    }
+                }
+            }
+        }
+        .comment-metadata {
+            color: $optional-color;
+
+            a {
+                color: $optional-color;
+    
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+        .comment-respond {
+            input[type="date"], input[type="time"], input[type="datetime-local"], input[type="week"], input[type="month"], input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: $white-color;
+
+                &::placeholder {
+                    color: $optional-color;
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            .comment-form-cookies-consent {
+                label {
+                    color: $optional-color;
+                }
+            }
+            .form-submit {
+                input {
+                    &:hover, &:focus {
+                        color: $black-color;
+                        background: $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
